@@ -1,0 +1,60 @@
+title: Simulation of the COVID-19 pandemic and its epidemiological and economical impacts
+description: Train an agent representing the government whose actions (lockdown, shutdown of work sectors etc) affect the spread of COVID-19 and its economical impact
+start_date: 2020-08-15 00:00:00+00:00
+end_date: 2021-06-30 23:00:50+00:00
+competition_docker_image: 'codalab/codalab-legacy:py37'
+image: logo.png
+has_registration: true
+force_submission_to_leaderboard: true
+disallow_leaderboard_modifying: false
+enable_detailed_results: false
+admin_names: guyon,mirwaissedjanbaz
+html:
+  Credits: Credits.html
+  overview: overview.html
+phases:
+  0:
+    auto_migration: false
+    color: green
+    description: 'Development phase: you can try your models in this phase'
+    ingestion_program: ingestion_program.zip
+    input_data: input_data.zip
+    is_scoring_only: false
+    label: Development phase
+    max_submissions: 1000
+    max_submissions_per_day: 20
+    phasenumber: 1
+    reference_data: reference_data.zip
+    scoring_program: scoring_program.zip
+    start_date: 2020-05-15 00:00:00+00:00
+    starting_kit: starting_kit.zip
+  1:
+    auto_migration: false
+    color: purple
+    description: 'Final phase: your last submission is pushed automaticly'
+    ingestion_program: ingestion_program.zip
+    input_data: input_data_2.zip
+    is_scoring_only: false
+    label: Final phase
+    max_submissions: 1000
+    max_submissions_per_day: 20
+    phasenumber: 2
+    reference_data: reference_data.zip
+    scoring_program: scoring_program.zip
+    start_date: 2020-08-08 00:00:00+00:00
+leaderboard:
+  columns:
+    Duration:
+      label: Duration
+      leaderboard: &id001
+        label: Results
+        rank: 1
+      rank: 1
+      sort: asc
+    score:
+      label: score
+      leaderboard: *id001
+      rank: 0
+      sort: asc
+  leaderboards:
+    Results: *id001

@@ -1,0 +1,19 @@
+{
+  "label": "1",
+  "population": 300000000,
+  "initial_cases": 100,
+  "sector_proportion": [0.05, 0.15, 0.8],
+  "production_value": [1000, 1500, 3000],
+  "stringency": [0.1, 0.2, 0.7],
+
+  "beta": 0.6,
+  "D_epi": 5,
+  "gamma": 0.2,
+  "mu": 0.01,
+  "inv_sigma": 3,
+  "inv_rho": 3,
+  "nu": 0.0001,
+  
+  "cost_beta": 4000,
+  "cost_mu": 100
+}
